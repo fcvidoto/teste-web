@@ -1,0 +1,25 @@
+extends layout.pug
+
+block title
+	title Lista de Usuarios
+
+block styles
+
+block content
+	div.content.container
+		h1.titulo Lista de Usuarios
+		ul.usuarios
+			each user in users
+				li.usuario
+					img(class="imagem" src=user.avatar)
+					p id:#{user.id} - #{user.first_name} #{user.last_name}
+		div.paginas
+			a(href="#")
+				img(class="seta-esquerda" src="/img/seta-esquerda.jpg")
+			input(class="select-page" type="text" placeholder="pág" value=dados.page)
+			a(href="#")
+				img(class="seta-direita" src="/img/seta-direita.jpg")
+			a(href="#")
+				img(class="go" src="/img/go.jpg")
+
+		p(class="marca-pagina small") pág #{dados.page} de #{dados.total_pages}

@@ -1,0 +1,51 @@
+
+/*
+Lista de pessoas ======================================== */
+
+/* Estilos Gerais */
+.titulo {
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.usuarios {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.usuarios p {
+  font-size: 1.35rem;
+}
+
+.imagem {
+  border-radius: 50%;
+}
+
+
+/* paginacao */
+.paginas {
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.select-page {
+  margin: 0 25px;
+  text-align: center;
+  width: 60px;
+}
+
+/* botao go to the page */
+.go {
+  margin: 0 auto;
+  display: block;
+  margin-top: 5px;
+}
+
+.marca-pagina {
+  text-align: center;
+  margin-top: 10px;
+}
